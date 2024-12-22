@@ -7,7 +7,6 @@ int diagonalDifference(vector<vector<int>> arr) {
         TL += arr[i][i];
         TR += arr[i][n - i - 1];
     }
-    
     int diff = abs(TL - TR);
     return diff;
 }
