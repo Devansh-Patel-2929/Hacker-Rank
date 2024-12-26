@@ -1,0 +1,28 @@
+int birthday(vector<int> s, int d, int m) {
+  
+  int n = s.size();
+  int count = 0;
+  if(n == m){
+    int sum = 0;
+    for(int i =0 ; i < n ; i++){
+      sum += s[i];
+    }
+    if(sum == d){
+      count++;
+    }
+  }
+
+  else{
+    for(int i = 0 ; i <= (n-m) ; i++){
+      int sum = 0;
+      for(int j = i ; j < (i+m) ; j++ ){
+        sum += s[j];
+      }
+      if(sum == d){
+        count++;
+      }
+    }
+  }
+  
+  return  count;
+}
