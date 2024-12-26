@@ -9,7 +9,6 @@ vector<int> breakingRecords(vector<int> scores) {
     if(scores[i] > max){
       maxcount++;
       max = scores[i];
-      
     }
     else if(scores[i] < min){
       mincount++;
